@@ -1,11 +1,11 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "CalcTest">
-    <listeners>
-        <listener class-name="calculator.SetUpTearDown" />
-    </listeners>
-    <test name="test suite" parallel="tests" thread-count="4">
+<suite name = "CalcTest" parallel="false">
+    <!--<listeners>
+        <listener class-name="calculator.SetUpTearDown"/>
+    </listeners>-->
+    <test name="test suite">
         <groups>
             <define name="all">
                 <include name="test-add"/>

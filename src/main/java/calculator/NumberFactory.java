@@ -10,12 +10,8 @@ class NumberFactory {
         try {
             num = new ArabicNumber(number);
         } catch (NumberFormatException e) {
-            num = new RomanNumber(number);
+            throw new RuntimeException("Not the right number");
         }
-
-//        if (num.number <  || num.number > 10) {
-//            throw new RuntimeException("Not the right number");
-//        }
 
         return num;
     }
@@ -24,8 +20,6 @@ class NumberFactory {
         switch (type) {
             case "arabic":
                 return new ArabicNumber(number);
-            case "roman":
-                return new RomanNumber(number);
             default:
                 throw new RuntimeException("Unknown type");
         }

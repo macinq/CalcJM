@@ -12,7 +12,7 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger level="info" name="calculator.*" additivity="false">
+        <Logger level="info" name="calculator" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
         <Root level="warn">

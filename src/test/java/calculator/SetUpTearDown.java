@@ -7,7 +7,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class SetUpTearDown implements ITestListener {
-  private static final Logger logger = LogManager.getLogger(SetUpTearDown.class);
+  private static final Logger logger = LogManager.getLogger(CalcTest.class);
 
   @Override
   public void onTestStart(ITestResult iTestResult) {

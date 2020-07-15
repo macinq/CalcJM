@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 public class Main {
     private static void printHelp() {
         System.out.println("****HELP****");
-        System.out.println("Numbers: 1 2 3 4 5 6 7 8 9 10 , I II III IV V VI VII IX X");
-        System.out.println("Actions: + - * / [arabic & arabic , roman & roman]");
+        System.out.println("Numbers: positive , negative");
+        System.out.println("Actions: + - * / [arabic & arabic]");
         System.out.println("Input format: <number><space><action><space><number>");
         System.out.println("Exit: <exit>");
         System.out.println("Help: <help>");
